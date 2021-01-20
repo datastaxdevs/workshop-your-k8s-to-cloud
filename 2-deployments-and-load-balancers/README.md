@@ -1,5 +1,3 @@
-![banner](https://raw.githubusercontent.com/DataStax-Academy/cassandra-workshop-series/master/materials/images/banner2.png)
-
 ## Exercise 2 - Deployments and Load Balancers
 
 Nodeports are easy to set up, but they have a big disadvantage: they are bound to a particular kubernetes worker node. If a pod gets deleted and recreated, it might get scheduled on a different worker node, and we won't be able to reach it anymore  via the nodeport.
