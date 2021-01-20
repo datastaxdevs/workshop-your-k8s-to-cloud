@@ -1,12 +1,9 @@
-![banner](https://raw.githubusercontent.com/DataStax-Academy/cassandra-workshop-series/master/materials/images/banner2.png)
-
-
 # Prerequisites
 To follow these steps, you will need to have your own GCP account. 
 
-A GCP account can be created for free, and with a new account you get a one-year free trial phase with $300 worth of credits to experiment with the GCP products. You will need some of these credits to follow along. 
+A GCP account can be created for free, and with a new account you get a **one-year free trial** phase with **$300 worth of credits** to experiment with the GCP products. You will need some of these credits to follow along. 
 
-The cost of having a small kubernetes cluster for a few days came to about $3-4 per day.
+The cost of having a small kubernetes cluster for a few days came to about $3-4 per day. Don't forget to remove unused resources or you may be billed by GCP!
 
 ⚠️ Important:
 You will need your own cloud account. This is not an exercise that you can do locally or with a loaned cloud instance.
@@ -26,6 +23,7 @@ Once you are signed in, proceed to the Console. The Console is your starting poi
 A first default project is created for you, named `My First Project`. We are using this project to host our Kubernetes cluster. 
 
 ### 3 - Billing
+
 You entered your credit card, so you want to keep a good eye on the costs, even during the free trial. One way is to export your billing. 
 
 You can access the billing overview from the Console in the left hand side panel. 
