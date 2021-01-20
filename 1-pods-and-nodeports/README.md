@@ -1,5 +1,3 @@
-![banner](https://raw.githubusercontent.com/DataStax-Academy/cassandra-workshop-series/master/materials/images/banner2.png)
-
 ## Exercise 1 - Pods and Nodeports
 
 ### 1 - Explore the cluster
