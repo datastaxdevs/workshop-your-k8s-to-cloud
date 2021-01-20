@@ -87,7 +87,7 @@ spec:
     spec:
       containers:
       - name: astra-backend
-        image: datastaxdevs/cws-week8-backend:latest
+        image: datastaxdevs/app-to-cloud:backend
         ports:
         - containerPort: 5000
         envFrom:
@@ -232,7 +232,7 @@ spec:
     spec:
       containers:
       - name: astra-ui
-        image: datastaxdevs/cws-week8-frontend:latest
+        image: datastaxdevs/app-to-cloud:backend
         ports:
         - containerPort: 3000
         envFrom:
