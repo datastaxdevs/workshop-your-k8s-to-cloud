@@ -268,7 +268,7 @@ From here it is as before: Enter your credentials in the dialog and connect to A
 
 ## BOOM! You've now deployed an application powered by Kubernetes using the Google Kubernetes Engine and backed by DataStax Astra. Nothing is stopping you now. Go, create, and bring us all your awesome!
 
-![Well Done](../../materials/images/welldone.jpg?raw=true)
+# Well Done!!!
 
 
 
