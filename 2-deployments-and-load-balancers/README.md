@@ -232,7 +232,7 @@ spec:
     spec:
       containers:
       - name: astra-ui
-        image: datastaxdevs/app-to-cloud:backend
+        image: datastaxdevs/app-to-cloud:frontend
         ports:
         - containerPort: 3000
         envFrom:
