@@ -1,5 +1,3 @@
-![banner](https://raw.githubusercontent.com/DataStax-Academy/cassandra-workshop-series/master/materials/images/banner2.png)
-
 ## Exercise 1 - Pods and Nodeports
 
 ### 1 - Explore the cluster
@@ -40,9 +38,9 @@ https://hub.docker.com/u/datastaxdevs
 
 We will use two images in our pods:
 
-`datastaxdevs/cws-week8-frontend:latest`
+`datastaxdevs/app-to-cloud:backend`
 
-`datastaxdevs/cws-week8-backend:latest`
+`datastaxdevs/app-to-cloud:frontend`
 
 ### 3 - Create the Kuberrnetes yamls for the backend
 
@@ -92,7 +90,7 @@ metadata:
 spec:
   containers:
   - name: astra-backend
-    image: datastaxdevs/cws-week8-backend:latest      
+    image: datastaxdevs/app-to-cloud:backend   
     ports:
         - containerPort: 5000
     envFrom:
@@ -245,7 +243,7 @@ metadata:
 spec:
   containers:
   - name: astra-ui
-    image: datastaxdevs/cws-week8-frontend:latest
+    image: datastaxdevs/app-to-cloud:frontend
     envFrom:
     - configMapRef:
         name: env-config

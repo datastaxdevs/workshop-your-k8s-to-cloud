@@ -1,5 +1,3 @@
-![banner](https://raw.githubusercontent.com/DataStax-Academy/cassandra-workshop-series/master/materials/images/banner2.png)
-
 ## Exercise 2 - Deployments and Load Balancers
 
 Nodeports are easy to set up, but they have a big disadvantage: they are bound to a particular kubernetes worker node. If a pod gets deleted and recreated, it might get scheduled on a different worker node, and we won't be able to reach it anymore  via the nodeport.
@@ -89,7 +87,7 @@ spec:
     spec:
       containers:
       - name: astra-backend
-        image: datastaxdevs/cws-week8-backend:latest
+        image: datastaxdevs/app-to-cloud:backend
         ports:
         - containerPort: 5000
         envFrom:
@@ -234,7 +232,7 @@ spec:
     spec:
       containers:
       - name: astra-ui
-        image: datastaxdevs/cws-week8-frontend:latest
+        image: datastaxdevs/app-to-cloud:frontend
         ports:
         - containerPort: 3000
         envFrom:
@@ -270,7 +268,7 @@ From here it is as before: Enter your credentials in the dialog and connect to A
 
 ## BOOM! You've now deployed an application powered by Kubernetes using the Google Kubernetes Engine and backed by DataStax Astra. Nothing is stopping you now. Go, create, and bring us all your awesome!
 
-![Well Done](../../materials/images/welldone.jpg?raw=true)
+# Well Done!!!
 
 
 
